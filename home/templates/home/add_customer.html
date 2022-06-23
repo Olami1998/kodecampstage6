@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h2>ADD NEW CUSTOMER</h2>
+       <form method="post">
+           {% csrf_token %}
+           <div>
+               <label for="username">Room Number</label>
+               <input type="numbers" id="username" name="room_number" required>
+           </div><br>
+           <div>
+                <label for="text">Amount Paid</label>
+                <input type="numbers" id="numbers" name="amount_paid" required>
+            </div><br>
+            <div>
+                <label for="name">Occupants Name</label>
+                <input type="text" id="fname" name="occupants_name" required>
+            </div><br>
+            <div>
+                <label for="email">Occupants Email</label>
+                <input type="email" id="email" name="email" required>
+            </div><br>
+            <div>
+                <label for="occupants_occupation">Occupants Occupation</label>
+                <input type="text" id="occupants_occupation" name="occupants_occupation" required>
+            </div><br>
+            <div>
+                <label for="number_of_nights">Number Of Nights</label>
+                <input type="number" id="number_of_nights" name="NON" required>
+            </div><br>
+            <div>
+                <label for="start_date">Start Date</label>
+                <input type="date" id="start_date" name="start_date" required>
+            </div><br>
+            <div>
+                <label for="end_date">End Date</label>
+                <input type="date" id="end_date" name="end_date" required>
+            </div><br>
+                <button type="submit">Add</button>
+            </div>
+        </form>
+    </body>
+</html>
+ 
